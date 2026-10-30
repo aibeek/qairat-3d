@@ -12,3 +12,55 @@
 .flat-name{top:43%!important;font-size:13px!important;line-height:1.1!important;letter-spacing:.3px!important;white-space:nowrap}#flat-focus .flat-name{top:42%!important;font-size:19px!important;font-weight:700!important}#flat-focus .flat-number{top:49%!important;font-size:125px!important}.flat-number{top:48%!important;font-size:75px!important}@media(max-width:700px){#flat-focus .flat-name{font-size:13px!important}#flat-focus .flat-number{font-size:78px!important}}
 
 .flat-name{top:40%!important}#flat-focus .flat-name{top:40%!important}#flat-focus .flat-number{top:44%!important}.flat-number{top:47%!important}
+
+/* Phone layout: reserve real space for the header, sheet and browser safe areas. */
+@media (max-width:767px) and (orientation:portrait){
+ #app{height:100dvh;isolation:isolate;--phone-top:140px;--phone-bottom:100px;--phone-room:400px}
+ header{padding: max(10px,env(safe-area-inset-top)) 12px 12px!important;gap:8px!important}
+ header .kairat-wordmark{font-size:30px}header .kairat-wordmark>span{font-size:7px;letter-spacing:3px}
+ header>div:first-child img{height:34px}header nav>div:last-child{margin:0 -12px;padding:2px 12px 4px;gap:6px}
+ header button,#search-toggle{min-height:44px}header [data-filter]{padding:0 13px;font-size:10px;letter-spacing:1px}
+ #search-panel{padding: max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom));z-index:60}
+ #search-input{font-size:16px}#search-results button{min-height:48px}
+ footer>div:first-child{padding:12px 12px 10px;align-items:center;gap:8px}
+ footer>div:first-child>div:first-child{font-size:0;line-height:1.5}
+ footer>div:first-child p{font-size:10px}footer>div:first-child a{font-size:9px;margin-left:0;margin-right:6px;display:inline-block}
+ footer .animate-ticker{padding:6px 0}footer .animate-ticker span{font-size:9px}
+ #card{inset:auto 8px calc(30px + env(safe-area-inset-bottom));width:auto;max-height:min(53dvh,470px);padding:10px 12px 12px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;background:rgba(23,23,19,.96);border-radius:20px 20px 14px 14px;scrollbar-width:thin;touch-action:pan-y}
+ #card-close{width:44px;height:44px;top:7px;right:7px}
+ #card-grip{padding-top:10px;padding-bottom:10px;touch-action:pan-y}
+ #card-photo{width:42px;height:58px;border-radius:9px}#card-num{font-size:36px}
+ #card-photo~div{flex:1;min-width:0}#card-first{font-size:12px}#card-flag{margin-right:3px}
+ #card-photo~div>p:first-child{white-space:normal;font-size:12px;line-height:1.25}
+ #card-last{font-size:clamp(16px,4.8vw,21px);white-space:normal;overflow-wrap:anywhere;line-height:1.1}
+ #card>div>div:has(>#card-photo){gap:8px;padding-right:38px}
+ #card-more{min-height:40px;font-size:10px;letter-spacing:.5px}
+ #card-data{font-size:10px;letter-spacing:.4px}#card-data dd{white-space:normal;overflow-wrap:anywhere}
+ #card-custom{min-width:0;padding:0 8px;font-size:10px;letter-spacing:.5px}
+ #card-prev,#card-next,#card-share,#card-custom,#cu-share{min-height:44px}#card-prev,#card-next,#card-share{width:44px}
+ #custom-form{padding-top:12px}#custom-form h2{font-size:26px;padding-right:32px}
+ #cu-name,#cu-num{font-size:20px}#toast{max-width:calc(100vw - 24px);white-space:normal;text-align:center;bottom:calc(34px + env(safe-area-inset-bottom))}
+ #flat-rail{inset:var(--phone-top) 0 var(--phone-bottom)!important;align-items:center;padding:0 24px!important;scroll-snap-type:x proximity;touch-action:pan-x;overscroll-behavior-x:contain}
+ .flat-shirt{width:min(64vw,calc(var(--phone-room)*.60),260px)!important;flex:0 0 min(64vw,calc(var(--phone-room)*.60),260px)!important;height:auto!important;aspect-ratio:420/620;margin-right:-45px!important;scroll-snap-align:center;container-type:inline-size;transform:rotateY(-15deg)!important}
+ .flat-shirt img{display:block}.flat-shirt .flat-name{font-size:5.2cqw!important}.flat-shirt .flat-number{font-size:31cqw!important;line-height:1!important}
+ #flat-focus{width:min(64vw,calc((var(--phone-room) - 48px)*.6774),300px)!important;height:auto;left:50%!important;top:calc(var(--phone-top) + (var(--phone-room) - 48px)/2)!important;transform:translate(-50%,-50%)!important;container-type:inline-size}
+ #flat-focus img{display:block}#flat-focus .flat-name{font-size:4.6cqw!important}#flat-focus .flat-number{font-size:30cqw!important;line-height:1!important}
+ #flat-turn{left:50%;top:auto!important;bottom:calc(var(--phone-bottom) + 4px)!important;min-height:40px;padding:8px 16px;font-size:11px;white-space:nowrap}
+ #flat-stage:before{top:calc(var(--phone-top) + var(--phone-room)*.15)!important}#flat-stage:after{bottom:var(--phone-bottom)!important;height:8%!important}
+ #flat-card-note{display:none!important}
+}
+@media(max-width:360px) and (orientation:portrait){
+ header .kairat-wordmark{font-size:26px}header .kairat-wordmark>span{letter-spacing:2px}#card{padding-left:10px;padding-right:10px}
+ #card-photo{width:34px;height:48px}#card-num{font-size:30px}#card-custom{font-size:9px}#card>div>div:has(>#card-custom){gap:5px}
+}
+@media(max-width:950px) and (max-height:550px) and (orientation:landscape){
+ header{padding:8px 14px 12px!important}header .kairat-wordmark{font-size:24px}header .kairat-wordmark>span{font-size:6px;margin-top:3px}
+ header>div:first-child img{height:28px}header [data-filter]{min-height:36px}header>div:nth-child(2)>p{display:none}
+ #card{right:10px;top:76px;bottom:34px;width:46vw;max-height:none;padding:12px;transform:none!important;translate:none!important;background:rgba(23,23,19,.96);overflow:auto}
+ #card-close{right:8px;top:8px;width:40px;height:40px}#card-photo{width:44px;height:62px;margin-right:24px}#card-num{font-size:42px}#card-last{font-size:19px;white-space:normal}#card-first{font-size:12px}
+ #card-data{font-size:10px}#card-data dt{font-size:9px}#card-custom,#card-prev,#card-next,#card-share{min-height:40px}
+ #flat-focus{left:24%!important;top:49%!important;width:min(28vw,calc((100dvh - 130px)*.6774))!important;transform:translate(-50%,-50%)!important;container-type:inline-size}
+ #flat-focus .flat-name{font-size:4.6cqw!important}#flat-focus .flat-number{font-size:30cqw!important}#flat-turn{left:24%;top:auto!important;bottom:36px;min-height:36px}
+ #app[data-card="open"] footer>div:first-child{display:none}#app[data-card="open"] footer{padding-top:0}#flat-card-note{display:none!important}
+}
+@media(prefers-reduced-motion:reduce){.animate-ticker{animation:none!important}.flat-shirt,#card{transition:none!important}}
