@@ -1,0 +1,14 @@
+
+:root{--color-oro:#f5cf29;--color-noche:#090909;--color-hueso:#f5f2e9}
+.kairat-wordmark{display:block;font-family:Anton,Impact,sans-serif;font-size:44px;line-height:.9;letter-spacing:2px;color:#f8d331}.kairat-wordmark>span{display:block;font:9px/1.6 "JetBrains Mono",monospace;letter-spacing:5px;color:#e6e2d9;margin-top:7px}#loader .kairat-wordmark{font-size:44px;margin-top:24px}header .kairat-wordmark{text-align:center}#card{font-family:Arial,sans-serif}#card-last{font-family:Arial,sans-serif}#flat-stage{background:radial-gradient(ellipse at 50% 44%,#38341b 0%,#17170e 45%,#080909 80%)!important}.flat-name{font-family:Arial,sans-serif!important;font-weight:800}.flat-number{font-family:Anton,Impact,sans-serif!important}#card-contrato{font-size:12px}#cu-buy{display:none}#custom-form:after{content:"Авторская форма в цветах клуба · предпросмотр";display:block;font:10px/1.6 Arial,sans-serif;color:#a8a69b;margin-top:12px}
+@media(max-width:700px){header .kairat-wordmark{font-size:27px}header .kairat-wordmark>span{font-size:7px;letter-spacing:3px}#card-last{font-size:23px}}
+
+.bg-grana{background:#f1cb24!important;color:#151510!important}.bg-grana .bg-oro{background:#151510!important}#flat-focus .flat-name,#flat-focus .flat-number{text-align:center}
+
+.flat-name,.flat-number{color:#111313!important;text-shadow:none!important}#flat-turn{position:absolute;left:26%;bottom:17%;transform:translateX(-50%);z-index:15;border:1px solid #f5d22b66;border-radius:30px;background:#171713;color:#f5d22b;padding:10px 20px;font:11px Arial,sans-serif;cursor:pointer}#flat-turn[hidden]{display:none}#custom-form:after{content:"Домашняя форма 2026 · Вратарь 1 · по Football Kit Archive"}@media(max-width:700px){#flat-turn{left:50%;top:51%;bottom:auto;padding:7px 16px;font-size:10px}}
+
+.bg-grana span{color:#171710!important}
+
+.flat-name{top:43%!important;font-size:13px!important;line-height:1.1!important;letter-spacing:.3px!important;white-space:nowrap}#flat-focus .flat-name{top:42%!important;font-size:19px!important;font-weight:700!important}#flat-focus .flat-number{top:49%!important;font-size:125px!important}.flat-number{top:48%!important;font-size:75px!important}@media(max-width:700px){#flat-focus .flat-name{font-size:13px!important}#flat-focus .flat-number{font-size:78px!important}}
+
+.flat-name{top:40%!important}#flat-focus .flat-name{top:40%!important}#flat-focus .flat-number{top:44%!important}.flat-number{top:47%!important}
